@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.iemoji.com%2Fview%2Femoji%2F40%2Fsymbols%2Fred-heart&psig=AOvVaw22FXSyBh_0Jvrkphly_78J&ust=1704744249865000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCxlLmJzIMDFQAAAAAdAAAAABAS" type="image/x-icon">
+    <title>Sorry Ani 😥😔</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-color: #fffbf5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #ff94c2;
+            color: #fff;
+            z-index: 1;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+            z-index: 1;
+        }
+
+        /* Heart Emoji Animation */
+        .emojis {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 2em;
+            animation: emojiAnimation linear infinite;
+        }
+
+        @keyframes emojiAnimation {
+            0% {
+                transform: translateY(100vh);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emojis">
+        
+    </div>
+
+    <header>
+        <h1>Apology Website</h1>
+        <p>Apologizing for the mistake</p>
+    </header>
+
+    <section>
+        <h1>Dear Ani,</h1>
+        <p>
+            I want to sincerely apologize for the mistake I made. I realize how much it hurt you,
+            and I am truly sorry for the pain I've caused. Please know that I deeply regret my actions.
+        </p> 
+
+        <p>
+            This website is my way of expressing my feelings and letting you know how much you mean to me.
+            I hope you can find it in your heart to forgive me, and I promise to learn from this experience
+            and work towards being a better friend.
+        </p>
+
+        <p>With all my love and regret,</p>
+        <p>Ayush</p>
+    </section>
+
+    <footer>
+        Apology Website | Designed with ❤️
+    </footer>
+
+    <script>
+        // JavaScript to dynamically generate heart emojis
+        document.addEventListener('DOMContentLoaded', function () {
+            const emojisContainer = document.querySelector('.emojis');
+
+            for (let i = 0; i < 20; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji';
+                emoji.innerHTML = '❤️'; // Heart emoji
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.animationDuration = Math.random() * 2 + 1 + 's';
+                emoji.style.animationDelay = Math.random() + 's';
+                emojisContainer.appendChild(emoji);
+            }
+        });
+    </script>
+</body>
+</html>
